@@ -5,7 +5,7 @@ const { send } = require("process");
 const geocode = require("./utils.js/geocode");
 const forecast = require("./utils.js/forecast");
 
-console.log(__dirname);
+// console.log(__dirname);
 console.log(path.join(__dirname, "../public"));
 
 const app = express();
