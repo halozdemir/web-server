@@ -11,8 +11,7 @@ const forecast = (long, lat, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]} .Its currently ${body.current.temperature} degrees out. Its like ${body.current.feelslike} degrees out.
-          `
+        `${body.current.weather_descriptions[0]} .Its currently ${body.current.temperature} degrees out. Its like ${body.current.feelslike} degrees out. And the humidity is ${body.current.humidity}.The last observation is made at ${body.current.observation_time}`
       );
     }
   });
